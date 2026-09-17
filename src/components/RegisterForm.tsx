@@ -22,8 +22,8 @@ export function RegisterForm() {
       `Shop / company: ${company}`,
       `Store URL: ${website}`,
       ``,
-      `Closest competitors to track:`,
-      competitors,
+      `Specific competitors requested (in addition to our 5 hand-picked):`,
+      competitors || "(none — go with your 5 picks)",
     ].join("\n");
 
     const mailto = `mailto:${REGISTRATION_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -70,12 +70,15 @@ export function RegisterForm() {
       </div>
       <div className="mt-4">
         <label className="mb-1.5 block text-xs font-medium tracking-wide uppercase" style={{ color: "var(--ink-muted)" }}>
-          Your closest competitors (one per line)
+          Specific competitors to include (optional, one per line)
         </label>
+        <p className="mb-2 text-xs" style={{ color: "var(--ink-muted)" }}>
+          We hand-pick 5 competitors for you automatically — this is only if you already have
+          specific ones in mind.
+        </p>
         <textarea
           name="competitors"
           rows={3}
-          required
           placeholder={"competitor-one.com\ncompetitor-two.com\ncompetitor-three.com"}
           className="w-full rounded-lg border px-3 py-2.5 text-sm outline-none transition-colors focus:border-[var(--gold)]"
           style={{ borderColor: "var(--border)", background: "var(--surface-2)", color: "var(--ink)" }}

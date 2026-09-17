@@ -17,6 +17,10 @@ const DIFFERENTIATORS = [
     title: "Built for you, not templated",
     body: "Your dashboard is set up around your specific catalog and your specific competitors — not a generic industry template.",
   },
+  {
+    title: "5 competitors, hand-picked for you",
+    body: "Every dashboard ships with 5 competitors our team hand-picks for your shop, automatically — no research required on your end. Know specific rivals you want tracked too? Add them any time.",
+  },
 ];
 
 const STEPS = [
@@ -27,13 +31,13 @@ const STEPS = [
   },
   {
     n: "02",
-    title: "Tell us who you're watching",
-    body: "Give us your closest competitors. Three is plenty. We do the rest.",
+    title: "We hand-pick 5 competitors",
+    body: "Our team automatically selects 5 close competitors for your shop — no research required. Want specific rivals tracked instead or as well? Just tell us.",
   },
   {
     n: "03",
     title: "Your dashboard goes live",
-    body: "Within 48 hours you get a personalized dashboard, refreshing every 3 hours.",
+    body: "Within 48 hours you get a personalized dashboard covering all 5 (plus any you named), refreshing every 3 hours.",
   },
   {
     n: "04",
@@ -54,6 +58,10 @@ const FAQS = [
   {
     q: "How is this different from a generic price-tracking tool?",
     a: "Most tools scrape thousands of sites and hand you a firehose. We build one dashboard around the handful of competitors that actually matter to your shop, so every alert is relevant.",
+  },
+  {
+    q: "How do you decide which competitors to track?",
+    a: "Your dashboard comes with 5 competitors our team hand-picks for you automatically based on your shop and industry — you don't have to do anything. Have specific rivals in mind? Tell us at registration or any time after, and we'll add or swap them in.",
   },
   {
     q: "How often does it update?",
@@ -90,6 +98,7 @@ export default function Home() {
           <p className="mt-6 max-w-xl text-lg" style={{ color: "var(--ink-secondary)" }}>
             Dean Enterprise builds a personalized pricing dashboard that watches your closest
             competitors — not the whole internet — and tells you the moment something changes.
+            We hand-pick 5 competitors for you automatically, and you can always add your own.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-4">
@@ -108,7 +117,7 @@ export default function Home() {
           <div className="mt-16 grid max-w-2xl grid-cols-2 gap-6 sm:grid-cols-4">
             {[
               ["3 hrs", "refresh cycle"],
-              ["100%", "personalized"],
+              ["5", "competitors, hand-picked"],
               ["$0", "to start"],
               ["1 / wk", "PDF report"],
             ].map(([value, label]) => (
@@ -132,8 +141,8 @@ export default function Home() {
             Not another scraper-of-everything.
           </h2>
           <p className="mt-3 max-w-2xl text-sm" style={{ color: "var(--ink-secondary)" }}>
-            Generic tools track the market. We track <em>your</em> market — the two or three shops
-            your customers are actually weighing you against.
+            Generic tools track the market. We track <em>your</em> market — 5 competitors we
+            hand-pick for your shop automatically, plus any you want to add yourself.
           </p>
           <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
             {DIFFERENTIATORS.map((d) => (
@@ -202,7 +211,8 @@ export default function Home() {
                 Free
               </div>
               <ul className="mt-5 space-y-2.5 text-sm" style={{ color: "var(--ink-secondary)" }}>
-                <li>— Full personalized dashboard, live in 48 hours</li>
+                <li>— 5 competitors hand-picked for you, automatically</li>
+                <li>— Add your own competitors any time, no extra cost</li>
                 <li>— Price checks every 3 hours</li>
                 <li>— One weekly PDF report</li>
                 <li>— No credit card on file, ever</li>
@@ -267,7 +277,8 @@ export default function Home() {
               Find your personalized dashboard.
             </h2>
             <p className="mx-auto mt-3 max-w-md text-sm" style={{ color: "var(--ink-secondary)" }}>
-              First month free. No credit card. Tell us who you&apos;re up against.
+              First month free. No credit card. We hand-pick 5 competitors for you automatically —
+              tell us about any specific ones below if you&apos;ve got them, or leave it blank.
             </p>
           </div>
           <div className="mt-10">
