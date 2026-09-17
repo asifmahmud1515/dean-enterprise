@@ -1,7 +1,4 @@
-/**
- * Business email that registration inquiries are addressed to.
- * PLACEHOLDER — replace with your real inbox before launch.
- */
-export const REGISTRATION_EMAIL = "hello@deanenterprise.io";
+/** Business email that registration inquiries are addressed to. */
+export const REGISTRATION_EMAIL = "info.deanenterprise@gmail.com";
 
 export const COMPANY_NAME = "Dean Enterprise";

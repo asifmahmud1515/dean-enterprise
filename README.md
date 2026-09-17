@@ -12,10 +12,9 @@ Marketing site for Dean Enterprise — personalized competitor price-intelligenc
 
 Next.js + Tailwind, same setup as the Desky Pricing Intelligence project. `next/font/google` loads Bebas Neue for display headlines and Geist for body text.
 
-## Before launch
+## Registrations
 
-- `src/lib/config.ts` has `REGISTRATION_EMAIL` set to a **placeholder** (`hello@deanenterprise.io`). Swap it for the real inbox that should receive registrations.
-- The register form currently opens a pre-filled `mailto:` draft — no backend, no credentials needed. Swap for a real form handler (Resend, a CRM webhook, etc.) if you want submissions to land somewhere more durable than an outbox.
+`src/lib/config.ts` sets `REGISTRATION_EMAIL` (currently `info.deanenterprise@gmail.com`). The register form opens a pre-filled `mailto:` draft to that address — no backend, no credentials needed. Swap for a real form handler (Resend, a CRM webhook, etc.) later if you want submissions to land somewhere more durable than an outbox.
 
 ## Commands
 
