@@ -1,4 +1,5 @@
 import { RegisterForm } from "@/components/RegisterForm";
+import { DeanHeroAnimation } from "@/components/DeanHeroAnimation";
 
 const DIFFERENTIATORS = [
   {
@@ -130,6 +131,16 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div
+            className="mt-16 overflow-hidden rounded-xl border"
+            style={{
+              borderColor: "var(--border-strong)",
+              boxShadow: "0 30px 80px -40px rgba(0,0,0,0.7)",
+            }}
+          >
+            <DeanHeroAnimation />
           </div>
         </div>
       </section>
